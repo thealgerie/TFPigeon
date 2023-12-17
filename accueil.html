@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_page.css">
+    <title>TFpigeon - Home</title>
+    <style>
+        /* Additional styles for the loading page */
+        #loading-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #333; /* Loading page background color */
+            color: #fff; /* Loading text color */
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading page -->
+    <div id="loading-page">
+        <p>Loading...</p>
+    </div>
+
+    <!-- Main content -->
+    <header>
+        <h1>TFpigeon</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="accueil.html">Home</a></li>
+                <li><a href="page1.html">Page 1</a></li>
+                <li><a href="page2.html">Page 2</a></li>
+                <li><a href="page3.html">Page 3</a></li>
+                <li class="dropdown">
+                    <a href="#">More</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Welcome to TFpigeon</h2>
+        <!-- Add your home page content here -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 TFpigeon. All rights reserved. | This content is not copyrighted. LaffortGaspard/EcorseLouis/ServeLeo</p>
+    </footer>
+
+    <!-- Your regular scripts and additional content go here -->
+
+    <script>
+        // Add a script to hide the loading page when the content is loaded
+        document.addEventListener("DOMContentLoaded", function() {
+            var loadingPage = document.getElementById("loading-page");
+            loadingPage.style.display = "none";
+        });
+    </script>
+</body>
+</html>
